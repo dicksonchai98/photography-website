@@ -52,13 +52,13 @@
         <span class="text-green-600 font-extrabold">Line</span>&ensp; 線上咨詢
       </button>
     </div>
-    <div @click="sidebar()" class="xl:hidden h-full content-center bg-898989">
+    <div @click="sidebar()" class="xl:hidden h-full flex items-center">
       <Icon icon="codicon:three-bars" width="31" height="31" style="color: white" />
     </div>
   </div>
   <div
-    v-show="!isSidebar"
-    class="bg-black justify-center transition duration-1000 ease-in flex items-center fixed top-0 left-0 z-50 opacity-85 w-screen h-screen"
+    :class="{ 'translate-x-0': isSidebar }"
+    class="bg-black justify-center translate-x-full transition duration-500 ease-in flex items-center fixed top-0 left-0 z-50 opacity-85 w-screen h-screen"
   >
     <div class="space-y-9 text-center">
       <p @click="sidebar" class="text-white hover:text-yellow-500">
