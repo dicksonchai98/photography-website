@@ -58,11 +58,11 @@
   </div>
   <div
     v-show="isSidebar"
-    class="bg-black fixed top-0 left-0 z-50 scrollbar-hide opacity-85 text-center content-center w-full h-full space-y-7"
+    class="bg-black fixed top-0 left-0 z-50 opacity-85 text-center content-center w-screen h-screen space-y-7"
   >
     <Icon
       @click="sidebar()"
-      class="absolute right-20 top-20"
+      class="absolute right-[50%] top-[50%]"
       icon="line-md:menu-to-close-transition"
       width="31"
       height="31"
