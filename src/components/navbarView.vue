@@ -77,14 +77,6 @@
         <RouterLink to="/contact">合作咨詢</RouterLink>
       </p>
     </div>
-    <Icon
-      @click="sidebar()"
-      class="fixed right-20 top-20"
-      icon="line-md:menu-to-close-transition"
-      width="31"
-      height="31"
-      style="color: white"
-    />
   </div>
 </template>
 
@@ -97,7 +89,7 @@ import { useCounterStore } from '@/stores/counter'
 const counterStore = useCounterStore()
 const route = useRoute()
 console.log(route)
-const isSidebar = ref(false)
+const isSidebar = ref(true)
 const sidebar = () => {
   isSidebar.value = !isSidebar.value
   console.log(isSidebar.value)
