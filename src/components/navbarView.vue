@@ -2,7 +2,7 @@
   <div
     class="bg-1f1f1f w-full max-w-[1920px] h-151 max-sm:px-[30px] px-[115px] text-white flex justify-between fixed z-50"
   >
-    <h1 class="text-white h-full content-center">
+    <h1 class="text-white h-full flex items-center">
       <RouterLink to="/">
         <img
           class="w-[151px] h-[151px] max-sm:w-[100px] max-sm:h-[100px]"
@@ -57,8 +57,8 @@
     </div>
   </div>
   <div
-    :class="{ 'translate-x-0': isSidebar }"
-    class="bg-black justify-center translate-x-full transition duration-500 ease-in flex items-center fixed top-0 left-0 z-50 opacity-85 w-screen h-screen"
+    :class="{ hidden: !isSidebar }"
+    class="bg-black justify-center flex transition duration-500 ease-in items-center fixed top-0 left-0 z-50 opacity-85 w-screen h-screen"
   >
     <div class="space-y-9 text-center">
       <p @click="sidebar" class="text-white hover:text-yellow-500">
