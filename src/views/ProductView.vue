@@ -1,8 +1,10 @@
 <template>
-  <div class="w-full bg-[#1a1a1a] h-[1290px] overflow-hidden">
-    <div class="lg:px-[110px] mx-auto">
+  <div class="px-10 w-full bg-[#1a1a1a] h-[1290px] overflow-hidden">
+    <div class="mx-auto">
       <div class="overflow-x-scroll post-container">
-        <ul class="grid grid-cols-7 gap-2 mt-[231px] text-white space-x-2 max-lg:min-w-[1500px]">
+        <ul
+          class="grid grid-cols-7 gap-2 mt-[231px] text-white space-x-2 max-sm:min-w-[900px] max-lg:min-w-[1500px]"
+        >
           <li
             @click="page = 'a'"
             :class="{ 'bg-black': page === 'a' }"
@@ -57,7 +59,7 @@
     </div>
     <div
       v-if="page === 'a'"
-      class="mx-auto mt-3 p-4 sm:w-1290 grid max-sm:grid-cols-1 grid-cols-4 gap-3 gap-y-20 text-white"
+      class="mx-auto mt-3 p-4 grid max-sm:grid-cols-1 grid-cols-4 gap-3 gap-y-20 text-white"
     >
       <div
         v-for="(url, index) in data"

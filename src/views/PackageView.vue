@@ -1,5 +1,5 @@
 <template>
-  <div class="w-screen h-[2009px] bg-[#1a1a1a] items-center flex flex-col">
+  <div class="w-full bg-[#1a1a1a] items-center flex flex-col">
     <div class="w-[80%] grid lg:grid-cols-2 lg:grid-rows-2 gap-[25px] mt-[282px] text-white">
       <div class="flex items-center hover:bg-yellow-400 bg-[#1f1f1f] p-14">
         <div class="">
@@ -66,14 +66,20 @@
         </div>
       </div>
     </div>
-    <div class="w-[80%] mt-5">
-      <p class="text-[#f8d55a] underline">NT10,000 起（黃字） 點選下⽅與我們討論</p>
+    <div
+      class="w-[199px] text-center my-10 leading-[26px] content-center rounded-lg bg-yellow-500 py-3 hover:bg-yellow-400 text-white font-bold pointer-events-auto"
+    >
+      <RouterLink @click="counterStore.scrollToTop()" class="block w-full h-full" to="/contact">
+        10,000起<br />與我們討論</RouterLink
+      >
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
 import { Icon } from '@iconify/vue'
+import { useCounterStore } from '@/stores/counter'
+const counterStore = useCounterStore()
 </script>
 
 <style scoped></style>

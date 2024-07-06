@@ -1,12 +1,18 @@
 <script setup lang="ts">
 import { Icon } from '@iconify/vue'
 import { RouterLink } from 'vue-router'
+import { useCounterStore } from '@/stores/counter'
+const counterStore = useCounterStore()
 </script>
 
 <template>
-  <div class="h-screen w-full bg-[#1f1f1f] text-white overflow-hidden">
+  <div
+    class="h-screen w-full max-w-[1920px] max-md:h-[600px] bg-[#1f1f1f] text-white overflow-hidden"
+  >
     <div class="sm:ml-28 max-sm:text-center mt-[190px]">
-      <div class="font-extrabold mb-6 max-md:text-[100px] text-140px leading-140 h-280">
+      <div
+        class="font-extrabold mb-6 max-md:leading-[70px] max-md:content-center max-md:h-[150px] max-md:text-[60px] text-140px leading-140 h-280"
+      >
         Patrick<br />Bradley
       </div>
       <div class="mb-7 max-md:text-[12px]">I’M A VIDEO BLOGGER & FILM MAKER</div>
@@ -47,16 +53,20 @@ import { RouterLink } from 'vue-router'
       </div>
     </div>
   </div>
-  <div class="md:px-104px w-full pb-10 bg-[#1a1a1a] overflow-hidden">
+  <div class="md:px-104px max-w-[1920px] w-full pb-10 bg-[#1a1a1a] overflow-hidden">
     <div class="flex max-md:flex-col justify-between items-center text-white mt-16 h-132">
       <div class="text-[32px]">方案介紹</div>
       <div
         class="w-[199px] text-center leading-[53px] rounded-lg h-[53px] bg-blue-500 hover:bg-blue-700 text-white font-bold pointer-events-auto"
       >
-        <RouterLink class="block w-full h-full" to="/package"> VIEW ALL SERVICES</RouterLink>
+        <RouterLink @click="counterStore.scrollToTop()" class="block w-full h-full" to="/package">
+          VIEW ALL SERVICES</RouterLink
+        >
       </div>
     </div>
-    <div class="max-xl:flex max-xl:flex-col grid grid-cols-3 gap-[25px] grid-flow-col text-white">
+    <div
+      class="max-xl:flex max-xl:flex-col grid grid-cols-3 max-md:mt-11 gap-[25px] grid-flow-col text-white"
+    >
       <div class="h-427 flex items-center hover:bg-yellow-400 bg-[#1f1f1f] p-14">
         <div class="w-[280px] h-[226px]">
           <Icon
@@ -104,78 +114,80 @@ import { RouterLink } from 'vue-router'
       </div>
     </div>
   </div>
-  <div class="w-full bg-[#1f1f1f] text-white place-content-center">
+  <div class="w-full max-w-[1920px] bg-[#1f1f1f] text-white place-content-center">
     <div class="mx-auto flex flex-col items-center">
       <div class="h-158 my-auto flex flex-col justify-center space-y-5 text-center">
         <p class="text-[32px] font-[800]">知名品牌指地合作</p>
         <p class="font-normal">與各公司企業長期穩定配合,令人信賴的影像製作團隊</p>
       </div>
-      <div class="px-[65px]">
-        <ul class="grid sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-5 gap-[60px]">
-          <li class="w-[213px] h-[110px]">
+      <div class="sm:px-[65px]">
+        <ul
+          class="grid max-sm:grid-cols-2 max-sm:gap-2 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-5 gap-[60px]"
+        >
+          <li class="w-[213px] h-[110px] max-sm:w-[170px]">
             <img class="object-contain w-full h-full" src="../assets/logo (1).png" alt="" />
           </li>
-          <li class="w-[213px] h-[110px]">
+          <li class="w-[213px] h-[110px] max-sm:w-[170px]">
             <img class="object-contain w-full h-full" src="../assets/logo (2).png" alt="" />
           </li>
-          <li class="w-[213px] h-[110px]">
+          <li class="w-[213px] h-[110px] max-sm:w-[170px]">
             <img class="object-contain w-full h-full" src="../assets/logo (3).png" alt="" />
           </li>
-          <li class="w-[213px] h-[110px]">
+          <li class="w-[213px] h-[110px] max-sm:w-[170px]">
             <img class="object-contain w-full h-full" src="../assets/logo (4).png" alt="" />
           </li>
-          <li class="w-[213px] h-[110px]">
+          <li class="w-[213px] h-[110px] max-sm:w-[170px]">
             <img class="object-contain w-full h-full" src="../assets/logo (5).png" alt="" />
           </li>
-          <li class="w-[213px] h-[110px]">
+          <li class="w-[213px] h-[110px] max-sm:w-[170px]">
             <img class="object-contain w-full h-full" src="../assets/logo (6).png" alt="" />
           </li>
-          <li class="w-[213px] h-[110px]">
+          <li class="w-[213px] h-[110px] max-sm:w-[170px]">
             <img class="object-contain w-full h-full" src="../assets/logo (7).png" alt="" />
           </li>
-          <li class="w-[213px] h-[110px]">
+          <li class="w-[213px] h-[110px] max-sm:w-[170px]">
             <img class="object-contain w-full h-full" src="../assets/logo (8).png" alt="" />
           </li>
-          <li class="w-[213px] h-[110px]">
+          <li class="w-[213px] h-[110px] max-sm:w-[170px]">
             <img class="object-contain w-full h-full" src="../assets/logo (9).png" alt="" />
           </li>
-          <li class="w-[213px] h-[110px]">
+          <li class="w-[213px] h-[110px] max-sm:w-[170px]">
             <img class="object-contain w-full h-full" src="../assets/logo (10).png" alt="" />
           </li>
-          <li class="w-[213px] h-[110px]">
+          <li class="w-[213px] h-[110px] max-sm:w-[170px]">
             <img class="object-contain w-full h-full" src="../assets/logo (11).png" alt="" />
           </li>
-          <li class="w-[213px] h-[110px]">
+          <li class="w-[213px] h-[110px] max-sm:w-[170px]">
             <img class="object-contain w-full h-full" src="../assets/logo (12).png" alt="" />
           </li>
-          <li class="w-[213px] h-[110px]">
+          <li class="w-[213px] h-[110px] max-sm:w-[170px]">
             <img class="object-contain w-full h-full" src="../assets/logo (13).png" alt="" />
           </li>
-          <li class="w-[213px] h-[110px]">
+          <li class="w-[213px] h-[110px] max-sm:w-[170px]">
             <img class="object-contain w-full h-full" src="../assets/logo (14).png" alt="" />
           </li>
-          <li class="w-[213px] h-[110px]">
+          <li class="w-[213px] h-[110px] max-sm:w-[170px]">
             <img class="object-contain w-full h-full" src="../assets/logo (15).png" alt="" />
           </li>
-          <li class="w-[213px] h-[110px]">
+          <li class="w-[213px] h-[110px] max-sm:w-[170px]">
             <img class="object-contain w-full h-full" src="../assets/logo (16).png" alt="" />
           </li>
-          <li class="w-[213px] h-[110px]">
+          <li class="w-[213px] h-[110px] max-sm:w-[170px]">
             <img class="object-contain w-full h-full" src="../assets/logo (17).png" alt="" />
           </li>
-          <li class="w-[213px] h-[110px]">
+          <li class="w-[213px] h-[110px] max-sm:w-[170px]">
             <img class="object-contain w-full h-full" src="../assets/logo (18).png" alt="" />
           </li>
-          <li class="w-[213px] h-[110px]">
+          <li class="w-[213px] h-[110px] max-sm:w-[170px]">
             <img class="object-contain w-full h-full" src="../assets/logo (19).png" alt="" />
           </li>
-          <li class="w-[213px] h-[110px]">
+          <li class="w-[213px] h-[110px] max-sm:w-[170px]">
             <img class="object-contain w-full h-full" src="../assets/logo (20).png" alt="" />
           </li>
-          <li class="w-[213px] h-[110px]">
+          <li class="w-[213px] h-[110px] max-sm:w-[170px]">
             <img class="object-contain w-full h-full" src="../assets/logo (21).png" alt="" />
           </li>
-          <li class="w-[213px] h-[110px]">
+          <li class="w-[213px] h-[110px] max-sm:w-[170px]">
             <img class="object-contain w-full h-full" src="../assets/logo (22).png" alt="" />
           </li>
         </ul>

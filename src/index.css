@@ -9,7 +9,7 @@
     @apply text-15px;
     @apply font-semibold;
     @apply text-surface;
-    @apply bg-white;
+    @apply bg-[#1f1f1f];
   }
 }
 

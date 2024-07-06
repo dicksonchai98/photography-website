@@ -1,17 +1,17 @@
 <template>
-  <div class="W-SCREEN h-fit bg-[#1a1a1a] flex justify-center">
+  <div class="W-SCREEN h-fit bg-white flex justify-center">
     <div class="w-[1290px] grid sm:grid-cols-2 mt-[281px]">
-      <div class="w-full text-yellow-50">
+      <div class="w-full max-sm:px-10 text-yellow-50">
         <img
-          src="https://cnbzwork.com/wp-content/uploads/2021/06/about-image.png"
+          src="https://lh3.googleusercontent.com/drive-viewer/AKGpihbFqGrQPEPUI16Ulc5F2HZI6Kh7SM-pCy6JzGSygBk6RYX72RhNzi_VzUhDXEvvm8B2mey2Uto5EQe4mFQ_oocqgMWONz5EhC0=s1600-rw-v1"
           class="object-cover h-full w-full"
         />
       </div>
-      <div class="text-white px-[35px] mt-[83px]">
+      <div class="text-black px-[35px] mt-[30px]">
         <p class="text-yellow-500">服務内容</p>
         <h1 class="text-[35px] mt-[16px] font-[800]">夕諾影像事務所</h1>
-        <div class="mt-[62px]">
-          <div class="flex mb-[51px]">
+        <div class="mt-[30px]">
+          <div class="flex mb-[30px]">
             <div class="w-[20%] font-[800] text-[30px] text-yellow-500">#1</div>
             <div class="w-[80%]">
               <h3 class="mb-[7px] text-[20px]">求婚紀錄</h3>
@@ -77,16 +77,16 @@
     </div>
   </div>
 
-  <div class="px-104px py-11 bg-[#1a1a1a] overflow-hidden">
-    <div class="flex items-center text-white mt-16 h-132">
+  <div class="px-104px max-sm:px-10 py-11 bg-white overflow-hidden">
+    <div class="flex items-center text-black h-132">
       <div class="text-[32px]">價格</div>
     </div>
-    <div class="grid sm:grid-cols-2 gap-[100px] text-white text-center">
-      <div class="bg-[#1f1f1f] py-14 h-fit">
+    <div class="grid sm:grid-cols-2 max-sm:gap-10 gap-[100px] text-black text-center">
+      <div class="bg-[#faf4f4] py-14 h-fit">
         <p>婚禮錄影紀錄</p>
         <div class="flex justify-center mt-2 space-x-1">
           <p
-            class="sm:text-[20px] md:text-[30px] lg:text-[40px] xl:text-[50px] font-[700] leading-[50px]"
+            class="sm:text-[20px] text-[20px] md:text-[30px] lg:text-[40px] xl:text-[50px] font-[700] leading-[50px]"
           >
             22,000 - 45,000$
           </p>
@@ -98,11 +98,11 @@
           <li>SDE快剪快播等等</li>
         </ul>
       </div>
-      <div class="bg-[#1f1f1f] py-14 h-fit">
+      <div class="bg-[#faf4f4] py-14 h-fit">
         <p>婚禮平⾯記錄</p>
         <div class="flex justify-center mt-2 space-x-1">
           <p
-            class="sm:text-[20px] md:text-[30px] lg:text-[40px] xl:text-[50px] font-[700] leading-[50px]"
+            class="text-[20px] sm:text-[20px] md:text-[30px] lg:text-[40px] xl:text-[50px] font-[700] leading-[50px]"
           >
             20,000 - 40,000$
           </p>
@@ -115,8 +115,8 @@
       </div>
     </div>
   </div>
-  <div class="bg-[#1a1a1a]">
-    <div class="px-[115px] py-11 mx-auto">
+  <div class="bg-white py-10">
+    <div class="px-[115px] max-sm:px-10 mx-auto">
       <div
         id="carouselExampleCrossfade"
         class="relative"

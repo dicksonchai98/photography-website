@@ -8,5 +8,10 @@ export const useCounterStore = defineStore('counter', () => {
     count.value++
   }
 
-  return { count, doubleCount, increment }
+  const scrollToTop = () => {
+    document.body.scrollTop = 0
+    document.documentElement.scrollTop = 0
+  }
+
+  return { count, doubleCount, increment, scrollToTop }
 })

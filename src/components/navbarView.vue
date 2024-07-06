@@ -1,6 +1,6 @@
 <template>
   <div
-    class="bg-1f1f1f w-full h-151 max-sm:px-[30px] px-[115px] text-white flex justify-between fixed z-50"
+    class="bg-1f1f1f w-full max-w-[1920px] h-151 max-sm:px-[30px] px-[115px] text-white flex justify-between fixed z-50"
   >
     <h1 class="text-white h-full content-center">
       <RouterLink to="/">
@@ -17,31 +17,31 @@
           :class="{ 'current-page': route.name === 'home' }"
           class="decoration-yellow-500 underline-offset-[24px] decoration-2 hover:underline"
         >
-          <RouterLink to="/"> 首頁</RouterLink>
+          <RouterLink @click="counterStore.scrollToTop()" to="/"> 首頁</RouterLink>
         </li>
         <li
           :class="{ 'current-page': route.name === 'about' }"
           class="underline-offset-[24px] decoration-yellow-500 decoration-2 hover:underline"
         >
-          <RouterLink to="/about">婚禮影像</RouterLink>
+          <RouterLink @click="counterStore.scrollToTop()" to="/about">婚禮影像</RouterLink>
         </li>
         <li
           :class="{ 'current-page': route.name === 'product' }"
           class="underline-offset-[24px] decoration-yellow-500 decoration-2 hover:underline"
         >
-          <RouterLink to="/product">精選作品</RouterLink>
+          <RouterLink @click="counterStore.scrollToTop()" to="/product">精選作品</RouterLink>
         </li>
         <li
           :class="{ 'current-page': route.name === 'package' }"
           class="underline-offset-[24px] decoration-yellow-500 decoration-2 hover:underline"
         >
-          <RouterLink to="/package">方案介紹</RouterLink>
+          <RouterLink @click="counterStore.scrollToTop()" to="/package">方案介紹</RouterLink>
         </li>
         <li
           :class="{ 'current-page': route.name === 'contact' }"
           class="underline-offset-[24px] decoration-yellow-500 decoration-2 hover:underline"
         >
-          <RouterLink to="/contact">合作咨詢</RouterLink>
+          <RouterLink @click="counterStore.scrollToTop()" to="/contact">合作咨詢</RouterLink>
         </li>
       </ul>
     </div>
@@ -92,6 +92,8 @@ import { RouterLink } from 'vue-router'
 import { useRoute } from 'vue-router'
 import { Icon } from '@iconify/vue'
 import { ref } from 'vue'
+import { useCounterStore } from '@/stores/counter'
+const counterStore = useCounterStore()
 const route = useRoute()
 console.log(route)
 const isSidebar = ref(false)
