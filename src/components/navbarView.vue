@@ -60,15 +60,6 @@
     v-show="isSidebar"
     class="bg-black fixed top-0 left-0 z-50 opacity-85 text-center content-center w-screen h-screen space-y-7"
   >
-    <Icon
-      @click="sidebar()"
-      class="absolute right-[50%] top-[50%]"
-      icon="line-md:menu-to-close-transition"
-      width="31"
-      height="31"
-      style="color: white"
-    />
-
     <p @click="sidebar" class="text-white hover:text-yellow-500">
       <RouterLink to="/"> 首頁</RouterLink>
     </p>
@@ -84,6 +75,14 @@
     <p @click="sidebar" class="text-white hover:text-yellow-500">
       <RouterLink to="/contact">合作咨詢</RouterLink>
     </p>
+    <Icon
+      @click="sidebar()"
+      class="fixed right-20 top-20"
+      icon="line-md:menu-to-close-transition"
+      width="31"
+      height="31"
+      style="color: white"
+    />
   </div>
 </template>
 
