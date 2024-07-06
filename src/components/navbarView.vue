@@ -58,23 +58,25 @@
   </div>
   <div
     v-show="isSidebar"
-    class="bg-black fixed top-0 left-0 z-50 opacity-85 text-center content-center w-screen h-screen space-y-7"
+    class="bg-black text-center content-center fixed top-0 left-0 z-50 opacity-85 w-screen h-screen"
   >
-    <p @click="sidebar" class="text-white hover:text-yellow-500">
-      <RouterLink to="/"> 首頁</RouterLink>
-    </p>
-    <p @click="sidebar" class="text-white hover:text-yellow-500">
-      <RouterLink to="/about">婚禮影像</RouterLink>
-    </p>
-    <p @click="sidebar" class="text-white hover:text-yellow-500">
-      <RouterLink to="/product">精選作品</RouterLink>
-    </p>
-    <p @click="sidebar" class="text-white hover:text-yellow-500">
-      <RouterLink to="/package">方案介紹</RouterLink>
-    </p>
-    <p @click="sidebar" class="text-white hover:text-yellow-500">
-      <RouterLink to="/contact">合作咨詢</RouterLink>
-    </p>
+    <div class="space-y-9">
+      <p @click="sidebar" class="text-white hover:text-yellow-500">
+        <RouterLink to="/"> 首頁</RouterLink>
+      </p>
+      <p @click="sidebar" class="text-white hover:text-yellow-500">
+        <RouterLink to="/about">婚禮影像</RouterLink>
+      </p>
+      <p @click="sidebar" class="text-white hover:text-yellow-500">
+        <RouterLink to="/product">精選作品</RouterLink>
+      </p>
+      <p @click="sidebar" class="text-white hover:text-yellow-500">
+        <RouterLink to="/package">方案介紹</RouterLink>
+      </p>
+      <p @click="sidebar" class="text-white hover:text-yellow-500">
+        <RouterLink to="/contact">合作咨詢</RouterLink>
+      </p>
+    </div>
     <Icon
       @click="sidebar()"
       class="fixed right-20 top-20"
