@@ -1,6 +1,6 @@
 <template>
   <div class="W-SCREEN h-fit bg-white flex justify-center">
-    <div class="w-[1290px] grid sm:grid-cols-2 mt-[281px]">
+    <div class="w-[1290px] grid sm:grid-cols-2 mt-[200px]">
       <div class="w-full max-sm:px-10 text-yellow-50">
         <img
           src="https://lh3.googleusercontent.com/drive-viewer/AKGpihbFqGrQPEPUI16Ulc5F2HZI6Kh7SM-pCy6JzGSygBk6RYX72RhNzi_VzUhDXEvvm8B2mey2Uto5EQe4mFQ_oocqgMWONz5EhC0=s1600-rw-v1"
@@ -83,10 +83,10 @@
     </div>
     <div class="grid sm:grid-cols-2 max-sm:gap-10 gap-[100px] text-black text-center">
       <div class="bg-[#faf4f4] py-14 h-fit">
-        <p>婚禮錄影紀錄</p>
+        <p class="font-black text-2xl">婚禮錄影紀錄</p>
         <div class="flex justify-center mt-2 space-x-1">
           <p
-            class="sm:text-[20px] text-[20px] md:text-[30px] lg:text-[40px] xl:text-[50px] font-[700] leading-[50px]"
+            class="sm:text-[20px] text-[20px] md:text-[30px] lg:text-[40px] xl:text-[50px] font-black leading-[50px]"
           >
             22,000 - 45,000$
           </p>
@@ -99,10 +99,10 @@
         </ul>
       </div>
       <div class="bg-[#faf4f4] py-14 h-fit">
-        <p>婚禮平⾯記錄</p>
+        <p class="font-black text-2xl">婚禮平⾯記錄</p>
         <div class="flex justify-center mt-2 space-x-1">
           <p
-            class="text-[20px] sm:text-[20px] md:text-[30px] lg:text-[40px] xl:text-[50px] font-[700] leading-[50px]"
+            class="text-[20px] sm:text-[20px] md:text-[30px] lg:text-[40px] xl:text-[50px] font-black leading-[50px]"
           >
             20,000 - 40,000$
           </p>
@@ -116,7 +116,7 @@
     </div>
   </div>
   <div class="bg-white py-10">
-    <div class="px-[115px] max-sm:px-10 mx-auto">
+    <div class="px-[115px] max-sm:h-[200px] max-sm:px-10 mx-auto">
       <div
         id="carouselExampleCrossfade"
         class="relative"
@@ -155,17 +155,17 @@
 
         <!--Carousel items-->
         <div
-          class="relative w-full overflow-hidden after:clear-both after:block after:content-['']"
+          class="relative w-full h-full overflow-hidden after:clear-both after:block after:content-['']"
         >
           <!--First item-->
           <div
-            class="relative float-left -mr-[100%] w-full !transform-none opacity-0 transition-opacity duration-[600ms] ease-in-out motion-reduce:transition-none"
+            class="relative float-left max-sm:h-[200px] h-[600px] -mr-[100%] w-full !transform-none opacity-0 transition-opacity duration-[600ms] ease-in-out motion-reduce:transition-none"
             data-twe-carousel-fade
             data-twe-carousel-item
             data-twe-carousel-active
           >
             <iframe
-              class="block w-full sm:h-[570px]"
+              class="block w-full h-full"
               src="https://www.youtube.com/embed/sbgdOZll5No?si=cR6P7L2xjibOtYg3"
               title="YouTube video player"
               frameborder="0"
@@ -176,12 +176,12 @@
           </div>
           <!--Second item-->
           <div
-            class="relative float-left -mr-[100%] hidden w-full !transform-none opacity-0 transition-opacity duration-[600ms] ease-in-out motion-reduce:transition-none"
+            class="relative float-left max-sm:h-[200px] h-[600px] -mr-[100%] hidden w-full !transform-none opacity-0 transition-opacity duration-[600ms] ease-in-out motion-reduce:transition-none"
             data-twe-carousel-fade
             data-twe-carousel-item
           >
             <iframe
-              class="block w-full sm:h-[570px]"
+              class="block w-full h-full"
               src="https://www.youtube.com/embed/FetGax03XnA?si=MkqzhRoSNEZd62Fw"
               title="YouTube video player"
               frameborder="0"
@@ -192,12 +192,12 @@
           </div>
           <!--Third item-->
           <div
-            class="relative float-left -mr-[100%] hidden w-full !transform-none opacity-0 transition-opacity duration-[600ms] ease-in-out motion-reduce:transition-none"
+            class="relative float-left max-sm:h-[200px] h-[600px] -mr-[100%] hidden w-full !transform-none opacity-0 transition-opacity duration-[600ms] ease-in-out motion-reduce:transition-none"
             data-twe-carousel-fade
             data-twe-carousel-item
           >
             <iframe
-              class="block w-full sm:h-[570px]"
+              class="block w-full h-full"
               src="https://www.youtube.com/embed/ikyHOTnqH10?si=UTh_w5-BiIefBCzJ"
               title="YouTube video player"
               frameborder="0"

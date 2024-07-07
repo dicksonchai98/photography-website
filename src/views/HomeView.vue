@@ -65,7 +65,7 @@ const counterStore = useCounterStore()
       </div>
     </div>
     <div
-      class="max-xl:flex max-xl:flex-col grid grid-cols-3 max-md:mt-11 gap-[25px] grid-flow-col text-white"
+      class="max-xl:flex max-xl:flex-col grid grid-cols-3 max-md:w-[80%] max-md:m-auto max-md:mt-11 gap-[25px] grid-flow-col text-white"
     >
       <div class="h-427 flex items-center hover:bg-yellow-400 bg-[#1f1f1f] p-14">
         <div class="w-[280px] h-[226px]">

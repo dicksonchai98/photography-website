@@ -1,6 +1,6 @@
 <template>
   <div class="w-full bg-[#1a1a1a] items-center flex flex-col">
-    <div class="w-[80%] grid lg:grid-cols-2 lg:grid-rows-2 gap-[25px] mt-[282px] text-white">
+    <div class="w-[80%] grid lg:grid-cols-2 lg:grid-rows-2 gap-[25px] mt-[200px] text-white">
       <div class="flex items-center hover:bg-yellow-400 bg-[#1f1f1f] p-14">
         <div class="">
           <Icon

@@ -111,7 +111,7 @@ const contactClicked = () => {
   width: 0;
   height: 0;
   border-left: 20px solid #ffffff;
-  border-top: 10px solid transparent;
+  border-top: 9px solid transparent;
   border-bottom: 10px solid transparent;
   position: absolute;
   top: 0;

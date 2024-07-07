@@ -3,7 +3,7 @@
     class="bg-1f1f1f w-full max-w-[1920px] h-151 max-sm:px-[30px] px-[115px] text-white flex justify-between fixed z-50"
   >
     <h1 class="text-white h-full flex items-center">
-      <RouterLink to="/">
+      <RouterLink @click="counterStore.scrollToTop()" to="/">
         <img
           class="w-[151px] h-[151px] max-sm:w-[100px] max-sm:h-[100px]"
           src="../assets/logo-w.png"
@@ -15,32 +15,29 @@
       <ul class="flex max-xl:hidden text-white font-semibold">
         <li
           :class="{ 'current-page': route.name === 'home' }"
-          class="decoration-yellow-500 underline-offset-[24px] decoration-2 hover:underline"
+          class="decoration-yellow-500 text-decorations underline-offset-[24px] decoration-2"
         >
           <RouterLink @click="counterStore.scrollToTop()" to="/"> 首頁</RouterLink>
         </li>
         <li
           :class="{ 'current-page': route.name === 'about' }"
-          class="underline-offset-[24px] decoration-yellow-500 decoration-2 hover:underline"
+          class="underline-offset-[22px] decoration-yellow-500 decoration-2 text-decorations"
         >
           <RouterLink @click="counterStore.scrollToTop()" to="/about">婚禮影像</RouterLink>
         </li>
         <li
           :class="{ 'current-page': route.name === 'product' }"
-          class="underline-offset-[24px] decoration-yellow-500 decoration-2 hover:underline"
+          class="underline-offset-[24px] decoration-yellow-500 decoration-2 text-decorations"
         >
           <RouterLink @click="counterStore.scrollToTop()" to="/product">精選作品</RouterLink>
         </li>
         <li
           :class="{ 'current-page': route.name === 'package' }"
-          class="underline-offset-[24px] decoration-yellow-500 decoration-2 hover:underline"
+          class="underline-offset-[24px] decoration-yellow-500 decoration-2 text-decorations"
         >
           <RouterLink @click="counterStore.scrollToTop()" to="/package">方案介紹</RouterLink>
         </li>
-        <li
-          :class="{ 'current-page': route.name === 'contact' }"
-          class="underline-offset-[24px] decoration-yellow-500 decoration-2 hover:underline"
-        >
+        <li :class="{ 'current-page': route.name === 'contact' }" class="text-decorations">
           <RouterLink @click="counterStore.scrollToTop()" to="/contact">合作咨詢</RouterLink>
         </li>
       </ul>
@@ -58,23 +55,23 @@
   </div>
   <div
     :class="{ hidden: !isSidebar }"
-    class="bg-black justify-center flex transition duration-500 ease-in items-center fixed top-0 left-0 z-50 opacity-85 w-screen h-screen"
+    class="bg-black justify-center translate-x-0 flex transition duration-500 ease-in items-center fixed top-0 left-0 z-50 opacity-85 w-screen h-screen"
   >
     <div class="space-y-9 text-center">
       <p @click="sidebar" class="text-white hover:text-yellow-500">
-        <RouterLink to="/"> 首頁</RouterLink>
+        <RouterLink @click="counterStore.scrollToTop()" to="/"> 首頁</RouterLink>
       </p>
       <p @click="sidebar" class="text-white hover:text-yellow-500">
-        <RouterLink to="/about">婚禮影像</RouterLink>
+        <RouterLink @click="counterStore.scrollToTop()" to="/about">婚禮影像</RouterLink>
       </p>
       <p @click="sidebar" class="text-white hover:text-yellow-500">
-        <RouterLink to="/product">精選作品</RouterLink>
+        <RouterLink @click="counterStore.scrollToTop()" to="/product">精選作品</RouterLink>
       </p>
       <p @click="sidebar" class="text-white hover:text-yellow-500">
-        <RouterLink to="/package">方案介紹</RouterLink>
+        <RouterLink @click="counterStore.scrollToTop()" to="/package">方案介紹</RouterLink>
       </p>
       <p @click="sidebar" class="text-white hover:text-yellow-500">
-        <RouterLink to="/contact">合作咨詢</RouterLink>
+        <RouterLink @click="counterStore.scrollToTop()" to="/contact">合作咨詢</RouterLink>
       </p>
     </div>
     <Icon
@@ -105,6 +102,26 @@ const sidebar = () => {
 </script>
 
 <style scoped>
+.text-decorations {
+  position: relative;
+  display: inline-block;
+}
+
+.text-decorations::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  flex: justify-content;
+  width: 0;
+  height: 2px;
+  background: #eab308;
+  transition: width 0.5s ease-out;
+}
+
+.text-decorations:hover::before {
+  width: 40%;
+}
+
 div {
   color: black;
 }
@@ -117,7 +134,19 @@ div ul li {
 }
 
 .current-page {
-  text-decoration: solid underline rgb(234 179 8) 2px;
+  position: relative;
+  display: inline-block;
+}
+
+.current-page::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  flex: justify-content;
+  width: 40%;
+  height: 2px;
+  background: #eab308;
+  transition: width 0.5s ease-out;
 }
 
 .scrollbar-hide::-webkit-scrollbar {

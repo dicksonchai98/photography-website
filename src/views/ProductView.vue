@@ -1,9 +1,9 @@
 <template>
-  <div class="px-10 w-full bg-[#1a1a1a] h-[1290px] overflow-hidden">
+  <div class="px-10 w-full bg-[#1a1a1a] min-h-lvh overflow-hidden">
     <div class="mx-auto">
       <div class="overflow-x-scroll post-container">
         <ul
-          class="grid grid-cols-7 gap-2 mt-[231px] text-white space-x-2 max-sm:min-w-[900px] max-lg:min-w-[1500px]"
+          class="grid grid-cols-7 gap-2 mt-[200px] text-white space-x-2 max-sm:min-w-[900px] max-lg:min-w-[1500px]"
         >
           <li
             @click="page = 'a'"

@@ -1,6 +1,6 @@
 <template>
-  <div class="h-[1179px] px-7 bg-[#1a1a1a] flex justify-center items-center">
-    <div class="flex flex-col w-1290 h-[901px] mt-[150px]">
+  <div class="h-[1179px] px-7 bg-[#1a1a1a] flex justify-center">
+    <div class="flex flex-col w-1290 h-[901px] mt-[200px]">
       <p class="text-[#f8d55a]">立即預約打造具有行銷力的高品質影片</p>
       <h1 class="text-white text-[60px] font-[800]">合作咨詢</h1>
       <p class="text-white font-normal mt-2">
