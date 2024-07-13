@@ -21,11 +21,12 @@
     :class="{ '-translate-y-[70px] duration-300 ease-out transition': contactStatus }"
     class="fixed bottom-[29px] right-[29px] duration-300 ease-out transition"
   >
-    <div
+    <a
+      href="https://lin.ee/FLXQabKB"
       class="cursor-pointer pointer-events-auto h-[62px] justify-center flex items-center bg-[#38b900] w-[62px] rounded-full"
     >
       <Icon icon="cib:line" width="31" height="31" style="color: white" />
-    </div>
+    </a>
   </div>
   <div
     :class="{ '-translate-y-[140px] duration-300 ease-out transition': contactStatus }"

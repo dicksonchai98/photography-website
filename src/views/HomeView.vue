@@ -6,16 +6,14 @@ const counterStore = useCounterStore()
 </script>
 
 <template>
-  <div
-    class="h-screen w-full max-w-[1920px] max-md:h-[600px] bg-[#1f1f1f] text-white overflow-hidden"
-  >
-    <div class="sm:ml-28 max-sm:text-center mt-[190px]">
+  <div class="h-screen w-full max-md:h-[600px] bg-[#1f1f1f] text-white overflow-hidden">
+    <div class="max-sm:text-center max-w-[1290px] mx-auto mt-[190px]">
       <div
-        class="font-extrabold mb-6 max-md:leading-[70px] max-md:content-center max-md:h-[150px] max-md:text-[60px] text-140px leading-140 h-280"
+        class="font-[900] mb-6 max-md:leading-[70px] max-md:content-center max-md:h-[150px] max-md:text-[60px] text-[150px] leading-140 h-280"
       >
-        Patrick<br />Bradley
+        CNBZ<br />WORK
       </div>
-      <div class="mb-7 max-md:text-[12px]">I’M A VIDEO BLOGGER & FILM MAKER</div>
+      <div class="mb-7 max-md:text-[12px] tracking-widest text-[20px]">夕諾影像</div>
       <div>
         <ul class="flex space-x-5 max-sm:justify-center">
           <a
@@ -53,8 +51,10 @@ const counterStore = useCounterStore()
       </div>
     </div>
   </div>
-  <div class="md:px-104px max-w-[1920px] w-full pb-10 bg-[#1a1a1a] overflow-hidden">
-    <div class="flex max-md:flex-col justify-between items-center text-white mt-16 h-132">
+  <div class="md:px-104px w-full pb-10 bg-[#1a1a1a] overflow-hidden">
+    <div
+      class="flex max-md:flex-col m-auto justify-between max-w-[1290px] items-center text-white mt-16 h-132"
+    >
       <div class="text-[32px]">方案介紹</div>
       <div
         class="w-[199px] text-center leading-[53px] rounded-lg h-[53px] bg-blue-500 hover:bg-blue-700 text-white font-bold pointer-events-auto"
@@ -65,7 +65,7 @@ const counterStore = useCounterStore()
       </div>
     </div>
     <div
-      class="max-xl:flex max-xl:flex-col grid grid-cols-3 max-md:w-[80%] max-md:m-auto max-md:mt-11 gap-[25px] grid-flow-col text-white"
+      class="max-xl:flex max-xl:flex-col grid grid-cols-3 max-w-[1290px] m-auto max-md:w-[80%] max-md:m-auto max-md:mt-11 gap-[25px] grid-flow-col text-white"
     >
       <div class="h-427 flex items-center hover:bg-yellow-400 bg-[#1f1f1f] p-14">
         <div class="w-[280px] h-[226px]">
@@ -114,7 +114,7 @@ const counterStore = useCounterStore()
       </div>
     </div>
   </div>
-  <div class="w-full max-w-[1920px] bg-[#1f1f1f] text-white place-content-center">
+  <div class="w-full bg-[#1f1f1f] text-white place-content-center">
     <div class="mx-auto flex flex-col items-center">
       <div class="h-158 my-auto flex flex-col justify-center space-y-5 text-center">
         <p class="text-[32px] font-[800]">知名品牌指地合作</p>

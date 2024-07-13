@@ -1,6 +1,6 @@
 <template>
   <div class="px-10 w-full bg-[#1a1a1a] min-h-lvh overflow-hidden">
-    <div class="mx-auto">
+    <div class="mx-auto w-1290">
       <div class="overflow-x-scroll post-container">
         <ul
           class="grid grid-cols-7 gap-2 mt-[200px] text-white space-x-2 max-sm:min-w-[900px] max-lg:min-w-[1500px]"
@@ -59,7 +59,7 @@
     </div>
     <div
       v-if="page === 'a'"
-      class="mx-auto mt-3 p-4 grid max-sm:grid-cols-1 grid-cols-4 gap-3 gap-y-20 text-white"
+      class="mx-auto mt-3 p-4 grid max-w-[1290px] max-sm:grid-cols-1 grid-cols-4 gap-3 gap-y-20 text-white"
     >
       <div
         v-for="(url, index) in data"
@@ -80,7 +80,7 @@
     </div>
     <div
       v-if="page === 'b'"
-      class="mx-auto mt-3 p-4 sm:w-1290 grid max-sm:grid-cols-1 grid-cols-4 gap-3 gap-y-20 text-white"
+      class="mx-auto mt-3 p-4 grid max-w-[1290px] max-sm:grid-cols-1 grid-cols-4 gap-3 gap-y-20 text-white"
     >
       <div
         v-for="(url, index) in anotherData"
@@ -101,7 +101,7 @@
     </div>
     <div
       v-if="page === 'c'"
-      class="mx-auto mt-3 p-4 sm:w-1290 grid max-sm:grid-cols-1 grid-cols-4 gap-3 gap-y-20 text-white"
+      class="mx-auto mt-3 p-4 grid max-w-[1290px] max-sm:grid-cols-1 grid-cols-4 gap-3 gap-y-20 text-white"
     >
       <div
         v-for="(url, index) in cartData"
@@ -122,7 +122,7 @@
     </div>
     <div
       v-if="page === 'd'"
-      class="mx-auto mt-3 p-4 sm:w-1290 grid max-sm:grid-cols-1 grid-cols-4 gap-3 gap-y-20 text-white"
+      class="mx-auto mt-3 p-4 grid max-w-[1290px] max-sm:grid-cols-1 grid-cols-4 gap-3 gap-y-20 text-white"
     >
       <div
         v-for="(url, index) in weddingData"
@@ -143,7 +143,7 @@
     </div>
     <div
       v-if="page === 'e'"
-      class="mx-auto mt-3 p-4 sm:w-1290 grid max-sm:grid-cols-1 grid-cols-4 gap-3 gap-y-20 text-white"
+      class="mx-auto mt-3 p-4 grid max-w-[1290px] max-sm:grid-cols-1 grid-cols-4 gap-3 gap-y-20 text-white"
     >
       <div
         v-for="(url, index) in musicData"
@@ -164,7 +164,7 @@
     </div>
     <div
       v-if="page === 'f'"
-      class="mx-auto mt-3 p-4 sm:w-1290 grid max-sm:grid-cols-1 grid-cols-4 gap-3 gap-y-20 text-white"
+      class="mx-auto mt-3 p-4 grid max-w-[1290px] max-sm:grid-cols-1 grid-cols-4 gap-3 gap-y-20 text-white"
     >
       <div
         v-for="(url, index) in shortVideoData"
@@ -185,14 +185,14 @@
     </div>
     <div
       v-if="page === 'g'"
-      class="mx-auto mt-3 p-4 sm:w-1290 grid max-sm:grid-cols-1 grid-cols-4 gap-3 gap-y-20 text-white"
+      class="mx-auto mt-3 p-4 grid max-w-[1290px] max-sm:grid-cols-1 grid-cols-4 gap-3 gap-y-20 text-white"
     >
       <div
         v-for="(url, index) in imageData"
         class="text-white text sm:w-full max-sm:mx-auto"
         :key="index"
       >
-        <img :src="url.url" class="w-[293px] h-[165px] object-cover" />
+        <img :src="url.url" class="w-[380px] h-[230px] object-cover" />
       </div>
     </div>
   </div>

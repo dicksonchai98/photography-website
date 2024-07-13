@@ -35,7 +35,7 @@
           <div class="flex mb-[51px]">
             <div class="w-[20%] font-[800] text-[30px] text-yellow-500">#3</div>
             <div class="w-[80%]">
-              <h3 class="mb-[7px] text-[20px]">婚禮快播快剪</h3>
+              <h3 class="mb-[7px] text-[20px]">SDE婚禮快剪快播</h3>
               <p class="font-normal">
                 每⼀個笑容、每⼀個擁抱、每⼀滴感動的淚⽔，藉由婚禮快剪快播服務，讓你們在婚禮當天就能將
                 當天的美好瞬間藉由影片，讓愛與幸福在第⼀時間感受到。
@@ -78,10 +78,12 @@
   </div>
 
   <div class="px-104px max-sm:px-10 py-11 bg-white overflow-hidden">
-    <div class="flex items-center text-black h-132">
+    <div class="flex items-center max-w-[1290px] m-auto text-black h-132">
       <div class="text-[32px]">價格</div>
     </div>
-    <div class="grid sm:grid-cols-2 max-sm:gap-10 gap-[100px] text-black text-center">
+    <div
+      class="grid sm:grid-cols-2 max-w-[1290px] m-auto max-sm:gap-10 gap-[100px] text-black text-center"
+    >
       <div class="bg-[#faf4f4] py-14 h-fit">
         <p class="font-black text-2xl">婚禮錄影紀錄</p>
         <div class="flex justify-center mt-2 space-x-1">
@@ -93,9 +95,7 @@
         </div>
 
         <ul class="mt-3 space-y-4 max-sm:text-[10px]">
-          <li>單機</li>
-          <li>多機</li>
-          <li>SDE快剪快播等等</li>
+          <li>單機、雙機、三機、SDE快剪快播等等</li>
         </ul>
       </div>
       <div class="bg-[#faf4f4] py-14 h-fit">
@@ -109,14 +109,13 @@
         </div>
 
         <ul class="mt-3 max-sm:text-[10px] space-y-4">
-          <li>單機</li>
-          <li>多機</li>
+          <li>單機、雙機、精裝相冊等等</li>
         </ul>
       </div>
     </div>
   </div>
   <div class="bg-white py-10">
-    <div class="px-[115px] max-sm:h-[200px] max-sm:px-10 mx-auto">
+    <div class="max-w-[1290px] max-sm:h-[200px] max-sm:px-10 mx-auto">
       <div
         id="carouselExampleCrossfade"
         class="relative"
@@ -172,6 +171,7 @@
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               referrerpolicy="strict-origin-when-cross-origin"
               allowfullscreen
+              loading="lazy"
             ></iframe>
           </div>
           <!--Second item-->
@@ -188,6 +188,7 @@
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               referrerpolicy="strict-origin-when-cross-origin"
               allowfullscreen
+              loading="lazy"
             ></iframe>
           </div>
           <!--Third item-->
@@ -200,6 +201,7 @@
               class="block w-full h-full"
               src="https://www.youtube.com/embed/ikyHOTnqH10?si=UTh_w5-BiIefBCzJ"
               title="YouTube video player"
+              loading="lazy"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               referrerpolicy="strict-origin-when-cross-origin"
@@ -270,7 +272,7 @@ import { Carousel, initTWE } from 'tw-elements'
 import { onMounted } from 'vue'
 
 onMounted(() => {
-  initTWE({ Carousel })
+  initTWE({ Carousel }, { allowReinits: true })
   console.log('hello')
 })
 </script>

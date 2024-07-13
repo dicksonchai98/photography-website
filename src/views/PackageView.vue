@@ -1,6 +1,8 @@
 <template>
   <div class="w-full bg-[#1a1a1a] items-center flex flex-col">
-    <div class="w-[80%] grid lg:grid-cols-2 lg:grid-rows-2 gap-[25px] mt-[200px] text-white">
+    <div
+      class="max-w-[1290px] px-10 grid lg:grid-cols-2 lg:grid-rows-2 gap-[25px] mt-[200px] text-white"
+    >
       <div class="flex items-center hover:bg-yellow-400 bg-[#1f1f1f] p-14">
         <div class="">
           <Icon
@@ -67,10 +69,10 @@
       </div>
     </div>
     <div
-      class="w-[199px] text-center my-10 leading-[26px] content-center rounded-lg bg-yellow-500 py-3 hover:bg-yellow-400 text-white font-bold pointer-events-auto"
+      class="w-[199px] text-center my-10 leading-[26px] font-[900] content-center rounded-lg bg-yellow-500 py-3 hover:bg-yellow-400 text-white pointer-events-auto"
     >
       <RouterLink @click="counterStore.scrollToTop()" class="block w-full h-full" to="/contact">
-        10,000起<br />與我們討論</RouterLink
+        NTD10,000起<br />與我們討論</RouterLink
       >
     </div>
   </div>
