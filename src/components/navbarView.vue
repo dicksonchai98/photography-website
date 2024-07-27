@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-1f1f1f fixed w-full z-50">
+  <div :class="{ 'bg-1f1f1f': scroll }" class="fixed w-full z-50">
     <div
       class="h-151 max-sm:px-[30px] max-w-[1290px] m-auto px-[30px] text-white flex justify-between"
     >
@@ -92,16 +92,42 @@
 import { RouterLink } from 'vue-router'
 import { useRoute } from 'vue-router'
 import { Icon } from '@iconify/vue'
-import { ref } from 'vue'
+import { ref, onMounted, onUnmounted, watch } from 'vue'
 import { useCounterStore } from '@/stores/counter'
 const counterStore = useCounterStore()
 const route = useRoute()
-console.log(route)
+console.log(route.name)
 const isSidebar = ref(false)
 const sidebar = () => {
   isSidebar.value = !isSidebar.value
   console.log(isSidebar.value)
 }
+
+watch(route, () => {
+  scrollBtn()
+})
+
+const scroll = ref(true)
+
+const scrollBtn = () => {
+  if (route.name === 'home' && window.scrollY === 0) {
+    scroll.value = false
+  } else {
+    scroll.value = true
+  }
+}
+const onScroll = () => {
+  scrollBtn()
+}
+
+onMounted(() => {
+  window.addEventListener('scroll', onScroll)
+  scrollBtn() // Initial check when component is mounted
+})
+
+onUnmounted(() => {
+  window.removeEventListener('scroll', onScroll)
+})
 </script>
 
 <style scoped>

@@ -6,16 +6,22 @@ const counterStore = useCounterStore()
 </script>
 
 <template>
-  <div class="h-screen w-full max-md:h-[600px] bg-[#1f1f1f] text-white overflow-hidden">
+  <div class="h-screen w-full max-md:h-[600px] text-white overflow-hidden relative">
+    <video autoplay loop muted plays-inline class="back-video">
+      <source src="../assets/show reel.mp4" type=" video/mp4" />
+    </video>
+
     <div class="max-sm:text-center max-w-[1290px] mx-auto mt-[190px]">
       <div
         class="font-[900] mb-6 max-md:leading-[70px] max-md:content-center max-md:h-[150px] max-md:text-[60px] text-[150px] leading-140 h-280"
       >
-        CNBZ<br />WORK
+        <img src="../assets/主頁字體.png" class="h-280 max-md:m-auto max-md:h-[150px]" alt="" />
       </div>
-      <div class="mb-7 max-md:text-[12px] tracking-widest text-[20px]">夕諾影像</div>
+      <div class="mb-7 max-md:text-[20px] md:pl-7 max-md:text-center tracking-widest text-[20px]">
+        夕諾影像
+      </div>
       <div>
-        <ul class="flex space-x-5 max-sm:justify-center">
+        <ul class="flex space-x-5 md: pl-7 max-md:justify-center">
           <a
             class="cursor-pointer pointer-events-auto h-[62px] justify-center flex items-center bg-gray-800 w-[62px] rounded-full"
             href="https://www.instagram.com/cnbz_work/"
