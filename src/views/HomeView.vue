@@ -36,7 +36,7 @@ onUnmounted(() => {
 
 <template>
   <div class="h-screen w-full max-md:h-[600px] text-white overflow-hidden relative">
-    <video autoplay loop muted playsinline webkit-playsinline class="back-video">
+    <video ref="video" autoplay loop muted playsinline webkit-playsinline class="back-video">
       <source src="../assets/show reel.mp4" type="video/mp4" />
     </video>
 
@@ -232,7 +232,7 @@ onUnmounted(() => {
   <button
     :class="{ hidden: scroll }"
     ref="playButton"
-    class="max-sm:opacity-100 buttons opacity-0 absolute bottom-[180px] text-white left-0 right-0"
+    class="max-sm:opacity-100 buttons opacity-0 absolute bottom-[150px] text-white left-0 right-0"
   >
     Play
   </button>
