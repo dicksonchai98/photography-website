@@ -7,7 +7,7 @@
         若您有關於影像製作、企業形象影片、產品影片、活動影像紀錄、多機轉播、
         多機直播等需求，歡迎來電洽詢，<br />或填寫下⽅表單，我們將盡速與您聯繫
       </p>
-      <form @submit="submitForm" class="text-898989 mt-[50px]">
+      <form @submit.prevent="submitForm" class="text-898989 mt-[50px]">
         <label class="block">
           <span class="block text-sm font-medium">姓名/公司行號 *</span>
           <!-- Using form state modifiers, the classes can be identical for every input -->
@@ -97,6 +97,7 @@
 
 <script setup lang="ts">
 import { ref } from 'vue'
+import { RouterLink } from 'vue-router'
 
 const submitForm = () => {
   const form = new FormData()
@@ -114,7 +115,10 @@ const submitForm = () => {
       body: form,
       mode: 'no-cors'
     }
-  ).then((response) => console.log(response))
+  ).then((response) => {
+    console.log(response)
+    window.location.href = '/'
+  })
 }
 
 // action="https://script.google.com/macros/s/AKfycbzb6h7FjAOCMu2kzlgef6wAucIsCkXNn5zbH0eTRZ28AA3v3LEmurhIsVPrj6ouRTiQDA/exec"
