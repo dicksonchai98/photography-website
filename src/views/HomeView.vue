@@ -1,8 +1,37 @@
 <script setup lang="ts">
 import { Icon } from '@iconify/vue'
+import { ref, onMounted, onUnmounted } from 'vue'
 import { RouterLink } from 'vue-router'
 import { useCounterStore } from '@/stores/counter'
 const counterStore = useCounterStore()
+
+const scroll = ref(false)
+const playButton = ref(null)
+const video = ref(null)
+
+const scrollBtn = () => {
+  if (window.scrollY === 0) {
+    scroll.value = false
+  } else {
+    scroll.value = true
+  }
+}
+const onScroll = () => {
+  scrollBtn()
+}
+
+onMounted(() => {
+  window.addEventListener('scroll', onScroll)
+  scrollBtn() // Initial check when component is mounted
+
+  playButton.value.addEventListener('click', () => {
+    video.value.play()
+  })
+})
+
+onUnmounted(() => {
+  window.removeEventListener('scroll', onScroll)
+})
 </script>
 
 <template>
@@ -200,6 +229,13 @@ const counterStore = useCounterStore()
       </div>
     </div>
   </div>
+  <button
+    :class="{ hidden: scroll }"
+    ref="playButton"
+    class="max-sm:opacity-100 buttons opacity-0 absolute bottom-[180px] text-white left-0 right-0"
+  >
+    Play
+  </button>
 </template>
 
 <style scoped>
