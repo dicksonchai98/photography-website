@@ -7,8 +7,8 @@ const counterStore = useCounterStore()
 
 <template>
   <div class="h-screen w-full max-md:h-[600px] text-white overflow-hidden relative">
-    <video autoplay loop muted plays-inline class="back-video">
-      <source src="../assets/show reel.mp4" type=" video/mp4" />
+    <video autoplay loop muted playsinline webkit-playsinline class="back-video">
+      <source src="../assets/show reel.mp4" type="video/mp4" />
     </video>
 
     <div class="max-sm:text-center max-w-[1290px] mx-auto mt-[190px]">
@@ -21,7 +21,7 @@ const counterStore = useCounterStore()
         夕諾影像
       </div>
       <div>
-        <ul class="flex space-x-5 md: pl-7 max-md:justify-center">
+        <ul class="flex space-x-5 md:pl-7 max-md:justify-center">
           <a
             class="cursor-pointer pointer-events-auto h-[62px] justify-center flex items-center bg-gray-800 w-[62px] rounded-full"
             href="https://www.instagram.com/cnbz_work/"
