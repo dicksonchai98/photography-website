@@ -225,6 +225,15 @@ onUnmounted(() => {
           <li class="w-[213px] h-[110px] max-sm:w-[170px]">
             <img class="object-contain w-full h-full" src="../assets/logo (22).png" alt="" />
           </li>
+          <li class="w-[213px] h-[110px] max-sm:w-[170px]">
+            <img class="object-contain w-full h-full" src="../assets/logo(23).png" alt="" />
+          </li>
+          <li class="w-[213px] h-[110px] max-sm:w-[170px]">
+            <img class="object-contain w-full h-full" src="../assets/logo(24).png" alt="" />
+          </li>
+          <li class="w-[213px] h-[110px] max-sm:w-[170px]">
+            <img class="object-contain w-full h-full" src="../assets/logo(25).png" alt="" />
+          </li>
         </ul>
       </div>
     </div>
