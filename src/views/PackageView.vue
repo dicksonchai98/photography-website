@@ -71,8 +71,12 @@
     <div
       class="w-[199px] text-center my-10 leading-[26px] font-[900] content-center rounded-lg bg-yellow-500 py-3 hover:bg-yellow-400 text-white pointer-events-auto"
     >
-      <RouterLink @click="counterStore.scrollToTop()" class="block w-full h-full" to="/contact">
-        NTD10,000起<br />與我們討論</RouterLink
+      <RouterLink
+        @click="counterStore.scrollToTop()"
+        class="block mt-2 text-black w-full h-full"
+        to="/contact"
+      >
+        <span class="text-white font-familys">NTD10,000起</span><br />與我們討論</RouterLink
       >
     </div>
   </div>
@@ -84,4 +88,9 @@ import { useCounterStore } from '@/stores/counter'
 const counterStore = useCounterStore()
 </script>
 
-<style scoped></style>
+<style scoped>
+.font-familys {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: x-large;
+}
+</style>

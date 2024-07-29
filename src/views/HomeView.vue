@@ -46,8 +46,8 @@ onUnmounted(() => {
       >
         <img src="../assets/主頁字體.png" class="h-280 max-md:m-auto max-md:h-[150px]" alt="" />
       </div>
-      <div class="mb-7 max-md:text-[20px] md:pl-7 max-md:text-center tracking-widest text-[20px]">
-        夕諾影像
+      <div class="mb-7 md:pl-3 max-md:justify-center flex">
+        <img src="../assets/夕諾影像.png" class="h-[40px] w-[170px]" alt="" />
       </div>
       <div>
         <ul class="flex space-x-5 md:pl-7 max-md:justify-center">

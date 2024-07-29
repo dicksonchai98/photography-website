@@ -9,7 +9,39 @@
       </div>
       <div class="text-black px-[35px] mt-[30px]">
         <p class="text-yellow-500">服務内容</p>
-        <h1 class="text-[35px] mt-[16px] font-[800]">夕諾影像事務所</h1>
+        <div class="flex justify-between mt-[16px] content-center items-center">
+          <h1 class="text-[35px] font-[800]">夕諾影像事務所</h1>
+          <ul class="flex space-x-5 md:pl-7 max-md:justify-center jus">
+            <a
+              class="cursor-pointer pointer-events-auto h-[42px] bg-gray-800 w-[42px] rounded-full flex justify-center items-center"
+              href="https://www.facebook.com/profile.php?id=61561062486642"
+            >
+              <Icon
+                icon="basil:facebook-messenger-solid"
+                width="21"
+                height="21"
+                style="color: white"
+              />
+            </a>
+            <a
+              class="cursor-pointer pointer-events-auto h-[42px] bg-gray-800 w-[42px] rounded-full flex justify-center items-center"
+              href="https://www.instagram.com/cnbzfilm_/"
+            >
+              <Icon
+                icon="icon-park-outline:instagram"
+                width="21"
+                height="21"
+                style="color: white"
+              />
+            </a>
+            <a
+              class="cursor-pointer pointer-events-auto h-[42px] bg-gray-800 w-[42px] rounded-full flex justify-center items-center"
+              href="https://liff.line.me/1645278921-kWRPP32q/?accountId=309derep"
+            >
+              <Icon icon="bi:line" width="21" height="21" style="color: white" />
+            </a>
+          </ul>
+        </div>
         <div class="mt-[30px]">
           <div class="flex mb-[30px]">
             <div class="w-[20%] font-[800] text-[30px] text-yellow-500">#1</div>
@@ -268,6 +300,7 @@
 </template>
 
 <script setup lang="ts">
+import { Icon } from '@iconify/vue'
 import { Carousel, initTWE } from 'tw-elements'
 import { onMounted } from 'vue'
 
