@@ -47,7 +47,7 @@ onUnmounted(() => {
         <img src="../assets/主頁字體.png" class="h-280 max-md:m-auto max-md:h-[150px]" alt="" />
       </div>
       <div class="mb-7 md:pl-3 max-md:justify-center flex">
-        <img src="../assets/夕諾影像.png" class="h-[40px] w-[170px]" alt="" />
+        <img src="../assets/夕諾影像.png" class="h-[50px] w-[220px]" alt="" />
       </div>
       <div>
         <ul class="flex space-x-5 md:pl-7 max-md:justify-center">
@@ -66,9 +66,9 @@ onUnmounted(() => {
           </a>
           <a
             class="cursor-pointer pointer-events-auto h-[62px] bg-gray-800 w-[62px] rounded-full flex justify-center items-center"
-            href="mailto:cnbzstudio@gmail.com"
+            href="https://www.tiktok.com/@cnbz_work?_t=8oRTlXfSK80&_r=1"
           >
-            <Icon icon="ic:baseline-email" width="31" height="31" style="color: white" />
+            <Icon icon="mage:tiktok-circle" width="31" height="31" style="color: white" />
           </a>
           <a
             class="cursor-pointer pointer-events-auto h-[62px] bg-gray-800 w-[62px] rounded-full flex justify-center items-center"
