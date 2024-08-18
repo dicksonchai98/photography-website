@@ -3,7 +3,7 @@
     <div class="w-[1290px] grid sm:grid-cols-2 mt-[200px]">
       <div class="w-full max-sm:px-10 text-yellow-50">
         <img
-          src="https://lh3.googleusercontent.com/drive-viewer/AKGpihbFqGrQPEPUI16Ulc5F2HZI6Kh7SM-pCy6JzGSygBk6RYX72RhNzi_VzUhDXEvvm8B2mey2Uto5EQe4mFQ_oocqgMWONz5EhC0=s1600-rw-v1"
+          src="https://drive.google.com/thumbnail?sz=w1000&id=1TSL5IY-nyQMTQJUJwu_EdaezlIfsjLmJ"
           class="object-cover h-full w-full"
         />
       </div>
