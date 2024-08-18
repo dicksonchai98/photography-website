@@ -78,7 +78,7 @@ onUnmounted(() => {
           </a>
           <a
             class="cursor-pointer pointer-events-auto h-[62px] bg-gray-800 w-[62px] rounded-full flex justify-center items-center"
-            href="https://www.youtube.com/@cnbzwork/feature"
+            href="https://www.youtube.com/@CNBZWORK666/featured"
           >
             <Icon icon="mdi:youtube" width="31" height="31" style="color: white" />
           </a>

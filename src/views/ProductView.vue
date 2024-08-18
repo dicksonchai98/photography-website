@@ -17,7 +17,7 @@
             :class="{ 'bg-black': page === 'b' }"
             class="h-[50px] hover:bg-black flex items-center pl-2"
           >
-            活動廣告
+            活動記錄
           </li>
           <li
             @click="page = 'c'"
