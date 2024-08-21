@@ -197,7 +197,7 @@
           >
             <iframe
               class="block w-full h-full"
-              src="https://youtu.be/embed/x3vBL_znaHQ?si=uqL7l_BwKKmZYi2v"
+              src="https://www.youtube.com/embed/x3vBL_znaHQ?si=-oRVjwsQuYEzpibc"
               title="YouTube video player"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -214,7 +214,7 @@
           >
             <iframe
               class="block w-full h-full"
-              src="https://youtu.be/embed/Ah0feYnyHBo?si=4PUeIXAdFpTsEVtn"
+              src="https://www.youtube.com/embed/Ah0feYnyHBo?si=ZBRnCxOTZhA54Dzw"
               title="YouTube video player"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -231,7 +231,7 @@
           >
             <iframe
               class="block w-full h-full"
-              src="https://youtu.be/embed/Mk9-2OVSeeI?si=AAWBAKYcd2ACRTur"
+              src="https://www.youtube.com/embed/Mk9-2OVSeeI?si=-74o9OthumH8xpEj"
               title="YouTube video player"
               loading="lazy"
               frameborder="0"
